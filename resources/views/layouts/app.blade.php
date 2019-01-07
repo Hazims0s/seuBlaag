@@ -23,7 +23,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/repo') }}">
+                <a class="navbar-brand" href="{{ url('/') }}">
                     <img id="logoseu" src="https://www.seu.edu.sa/sites/ar/PublishingImages/icon/Logo3.jpg" style="border: 0; float: left; margin-right: 15px; width:300px; height: auto; " />
                 </a>
                 <p ><em>Alpha</em></p>
