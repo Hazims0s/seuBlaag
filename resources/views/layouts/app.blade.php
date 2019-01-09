@@ -23,10 +23,15 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
+
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img id="logoseu" src="https://www.seu.edu.sa/sites/ar/PublishingImages/icon/Logo3.jpg" style="border: 0; float: left; margin-right: 15px; width:300px; height: auto; " />
+                    <figure>
+                        <img id="logoseu" src="https://www.seu.edu.sa/sites/ar/PublishingImages/icon/Logo3.jpg" style="border: 0; float: left; margin-right: 15px; width:300px; height: auto; " />
+
+                    </figure>
+
                 </a>
-                <p ><em>فرع المدينة المنورة/Alpha</em></p>
+                <p ><em>Alpha/فرع المدينة المنورة</em></p>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
