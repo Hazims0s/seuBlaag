@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Blaag</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -71,7 +71,6 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
             @endif
@@ -82,7 +81,6 @@
                     Blaag
                     نظام بلاغ
                 </div>
-                <img src="..." alt="..." class="rounded">
                 <div class="links">
                     <a href="/repo">Report| بلغ</a>
                     <a href="/track">Track|تعقب البلاغ</a>
