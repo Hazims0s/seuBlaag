@@ -57,6 +57,10 @@
                         <div class="block-page align-middle " style="direction: rtl; align-content: center; align-items: center;">
 
 
+                            @if($report->reportStatus=='O')
+
+                                <p class="lead align-middle" style="alignment: center; alignment-baseline: center; float: right; right: 50%; position: relative;"> </p>
+                                @else
                             <p class="lead align-middle" style="alignment: center; alignment-baseline: center; float: right; right: 50%; position: relative;"> اجراءات البلاغ</p>
                             <br/>  <br/>
 
@@ -86,6 +90,7 @@
                                 </table>
                             </div>
                             <br/>
+                                @endif
                         </div>
 
                             <br/>
