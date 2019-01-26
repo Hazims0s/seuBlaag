@@ -13,8 +13,10 @@ class CreateReportUpdatesTable extends Migration
      */
     public function up()
     {
+
         Schema::create('report_updates', function (Blueprint $table) {
            $table->increments('id');
+            $table->engine = 'InnoDB';
             $table->string('comment');
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('report_id');
