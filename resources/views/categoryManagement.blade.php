@@ -22,6 +22,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
+
                                     @forelse($categories as $category )
                                         <tr>
                                             <td >{{$category->name}} </td>
