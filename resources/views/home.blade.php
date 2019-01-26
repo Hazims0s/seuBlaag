@@ -7,6 +7,7 @@
                 <div class="card">
                     <div class="card-header">Dashboard</div>
                     <div class="progressbar-heading grids-heading">
+                        <a class="btn-dark" href="\categories">التصنيفات</a>
                         <h2 style="text-align: center">  طلبات الصيانة </h2>
                     </div>
                     <div class="panel panel-widget align-middle">
