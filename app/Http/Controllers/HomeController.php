@@ -29,6 +29,8 @@ class HomeController extends Controller
         'reporter_email'=>'required|max:250',
         'branch_section'=>'required|max:1',
         'report_title'=>'required|max:250',
+        'office_no'=>'required|max:250',
+        'category'=>'required|max:250',
         'report_description'=>'required|max:250']);
         $report = new Report();
         $report->reporterName= $request->reporter_name;
@@ -36,6 +38,10 @@ class HomeController extends Controller
         $report->reporterSection=$request->branch_section;
         $report->reportTitle= $request->report_title;
         $report->reportStatus= "O";
+        $report->branch= "1";
+        $report->priority= "1";
+        $report->category= $request->category;
+        $report->officeNo= $request->office_no;;
         $report->reportDescription= $request->report_description;
         $report->save();
         $id = $report->id;

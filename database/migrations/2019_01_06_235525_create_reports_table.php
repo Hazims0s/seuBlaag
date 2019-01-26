@@ -21,7 +21,13 @@ class CreateReportsTable extends Migration
             $table->char('reporterSection');
             $table->string('reportTitle');
             $table->char('reportStatus');
+            $table->integer('priority');
             $table->string('reportDescription');
+            $table->string('officeNo');
+            $table->unsignedInteger('category');
+            $table->unsignedInteger('branch');
+            $table->foreign('branch')->references('id')->on('branches');
+            $table->foreign('category')->references('id')->on('categories');
         });
     }
 

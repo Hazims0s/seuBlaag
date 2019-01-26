@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -58,6 +60,16 @@
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="usertype" class="col-md-4 col-form-label text-md-right">{{ __('User Type') }}</label>
+
+                            <div class="col-md-6">
+                                <select  class="form-control" id="usertype" name="usertype">
+                                    <option value="Admin">Admin</option>
+                                    <option value="Technician">Technician</option>
+                                </select>
                             </div>
                         </div>
 

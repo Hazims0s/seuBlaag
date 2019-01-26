@@ -30,3 +30,11 @@ Route::get('/home', 'HomeController@home')->name('Home');
 
 Route::get('/track', 'HomeController@track')->name('Track');
 Route::post('/track/get', 'HomeController@getDetails');
+
+Route::get('/categories', 'categoriesController@showall')->name('Category');
+Route::post('/categories/add', 'categoriesController@add');
+
+
+Route::get('/branches', 'branchesController@showall')->name('branches');
+Route::post('/branches/add', 'branchesController@add');
+

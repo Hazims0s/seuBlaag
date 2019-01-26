@@ -16,8 +16,8 @@ class CreateReportUpdatesTable extends Migration
         Schema::create('report_updates', function (Blueprint $table) {
            $table->increments('id');
             $table->string('comment');
-            $table->string('user_id',250);
-            $table->string('report_id',250);
+            $table->unsignedInteger('user_id');
+            $table->unsignedInteger('report_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('report_id')->references('id')->on('reports');
             $table->timestamps();
