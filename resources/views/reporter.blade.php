@@ -54,7 +54,7 @@
                                 <br/>
                                 <label>
                                     <input type="radio" name="branch_section" value="G">
-                                    <img style="height: 75px; width: 45px" src="img/females.png">
+                                    <img style="height: 75px; width: 45px" src="img/fe.png">
                                 </label>
 
                                 <label>
