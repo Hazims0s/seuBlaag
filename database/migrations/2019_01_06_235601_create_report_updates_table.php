@@ -18,8 +18,8 @@ class CreateReportUpdatesTable extends Migration
            $table->increments('id');
             $table->engine = 'InnoDB';
             $table->string('comment');
-            $table->unsignedInteger('user_id');
-            $table->unsignedInteger('report_id');
+            $table->integer('user_id')->unsigned();
+            $table->integer('report_id')->unsigned();
             $table->timestamps();
         });
 

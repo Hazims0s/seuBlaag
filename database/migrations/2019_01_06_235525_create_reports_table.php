@@ -25,8 +25,8 @@ class CreateReportsTable extends Migration
             $table->integer('priority');
             $table->string('reportDescription');
             $table->string('officeNo');
-            $table->unsignedInteger('category');
-            $table->unsignedInteger('branch');
+            $table->integer('category')->unsigned();
+            $table->integer('branch')->unsigned();
         });
 
         Schema::table('reports', function($table){
