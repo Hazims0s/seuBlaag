@@ -27,11 +27,11 @@ class CreateReportsTable extends Migration
             $table->integer('category')->unsigned();
             $table->integer('branch')->unsigned();
         });
-
+/*
         Schema::table('report_updates',  function(Blueprint $table){
             $table->foreign('branch')->references('id')->on('branches')->onDelete('cascade');
             $table->foreign('category')->references('id')->on('categories')->onDelete('cascade');
-        });
+        });*/
     }
 
     /**

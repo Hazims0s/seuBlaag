@@ -21,11 +21,11 @@ class CreateReportUpdatesTable extends Migration
             $table->integer('report_id')->unsigned();
             $table->timestamps();
         });
-
+/*
         Schema::table('report_updates',  function(Blueprint $table){
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('report_id')->references('id')->on('reports')->onDelete('cascade');
-        });
+        });*/
 
     }
 
