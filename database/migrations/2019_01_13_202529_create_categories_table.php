@@ -30,15 +30,3 @@ class CreateCategoriesTable extends Migration
         Schema::dropIfExists('categories');
     }
 }
-Schema::create('report_updates', function (Blueprint $table) {
-    $table->increments('id');
-    $table->string('comment');
-    $table->integer('user_id')->unsigned();
-    $table->integer('report_id')->unsigned();
-    $table->timestamps();
-});
-
-Schema::table('report_updates',  function(Blueprint $table){
-    $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-    $table->foreign('report_id')->references('id')->on('reports')->onDelete('cascade');
-});
