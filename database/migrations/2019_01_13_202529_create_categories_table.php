@@ -38,7 +38,7 @@ Schema::create('report_updates', function (Blueprint $table) {
     $table->timestamps();
 });
 
-Schema::table('report_updates', function($table){
+Schema::table('report_updates',  function(Blueprint $table){
     $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
     $table->foreign('report_id')->references('id')->on('reports')->onDelete('cascade');
 });
