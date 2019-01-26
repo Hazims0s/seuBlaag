@@ -27,8 +27,12 @@ class CreateReportsTable extends Migration
             $table->string('officeNo');
             $table->unsignedInteger('category');
             $table->unsignedInteger('branch');
-            $table->foreign('branch')->references('id')->on('branches');
-            $table->foreign('category')->references('id')->on('categories');
+        });
+
+        Schema::table('reports', function($table){
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('branch')->references('id')->on('branches')->onDelete('cascade');
+            $table->foreign('category')->references('id')->on('categories')->onDelete('cascade');
         });
     }
 
