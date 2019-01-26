@@ -14,8 +14,7 @@ class CreateReportsTable extends Migration
     public function up()
     {
         Schema::create('reports', function (Blueprint $table) {
-
-           $table->increments('id');
+            $table->increments('id');
             $table->timestamps();
             $table->string('reporterName');
             $table->string('reporterEmail');
@@ -29,8 +28,7 @@ class CreateReportsTable extends Migration
             $table->integer('branch')->unsigned();
         });
 
-        Schema::table('reports', function($table){
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+        Schema::table('report_updates', function($table){
             $table->foreign('branch')->references('id')->on('branches')->onDelete('cascade');
             $table->foreign('category')->references('id')->on('categories')->onDelete('cascade');
         });

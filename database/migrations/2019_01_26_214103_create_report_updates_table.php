@@ -15,8 +15,7 @@ class CreateReportUpdatesTable extends Migration
     {
 
         Schema::create('report_updates', function (Blueprint $table) {
-           $table->increments('id');
-            $table->engine = 'InnoDB';
+            $table->increments('id');
             $table->string('comment');
             $table->integer('user_id')->unsigned();
             $table->integer('report_id')->unsigned();
@@ -27,6 +26,7 @@ class CreateReportUpdatesTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('report_id')->references('id')->on('reports')->onDelete('cascade');
         });
+
     }
 
     /**
