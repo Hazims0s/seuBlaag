@@ -12,6 +12,14 @@ class Report extends Model
     {
         return $this->hasMany('App\ReportUpdate');
     }
+    public function category()
+    {
+        return $this->hasOne('App\Category');
+    }
+    public function branch()
+    {
+        return $this->hasOne('App\Branch');
+    }
 
     public function reportDay(){
         return $nameOfDay = date('D', strtotime($this->created_at));
